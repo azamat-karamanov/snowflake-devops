@@ -1,0 +1,96 @@
+Run echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+GITHUB_WORKSPACE: /home/runner/work/snowflake-devops/snowflake-devops
+Python 3.8.18
+Step 1: Installing schemachange
+Collecting schemachange
+  Downloading schemachange-4.0.1-py3-none-any.whl.metadata (37 kB)
+Collecting cryptography (from schemachange)
+  Downloading cryptography-45.0.5-cp37-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+Collecting jinja2~=3.0 (from schemachange)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting pyyaml~=6.0 (from schemachange)
+  Downloading PyYAML-6.0.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting requests (from schemachange)
+  Downloading requests-2.32.4-py3-none-any.whl.metadata (4.9 kB)
+Collecting snowflake-connector-python<4.0,>=2.8 (from schemachange)
+  Downloading snowflake_connector_python-3.14.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (67 kB)
+Collecting structlog~=24.1.0 (from schemachange)
+  Downloading structlog-24.1.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting MarkupSafe>=2.0 (from jinja2~=3.0->schemachange)
+  Downloading MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting asn1crypto<2.0.0,>0.24.0 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading asn1crypto-1.5.1-py2.py3-none-any.whl.metadata (13 kB)
+Collecting cffi<2.0.0,>=1.9 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading cffi-1.17.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting pyOpenSSL<26.0.0,>=22.0.0 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading pyopenssl-25.1.0-py3-none-any.whl.metadata (17 kB)
+Collecting pyjwt<3.0.0 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading PyJWT-2.9.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting pytz (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting packaging (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting charset-normalizer<4,>=2 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading charset_normalizer-3.4.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+Collecting idna<4,>=2.5 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting certifi>=2017.4.17 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading certifi-2025.7.14-py3-none-any.whl.metadata (2.4 kB)
+Collecting typing-extensions<5,>=4.3 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting filelock<4,>=3.5 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading filelock-3.16.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting sortedcontainers>=2.4.0 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting platformdirs<5.0.0,>=2.6.0 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+Collecting tomlkit (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading tomlkit-0.13.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting urllib3<2.0.0,>=1.21.1 (from snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading urllib3-1.26.20-py2.py3-none-any.whl.metadata (50 kB)
+Collecting pycparser (from cffi<2.0.0,>=1.9->snowflake-connector-python<4.0,>=2.8->schemachange)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading schemachange-4.0.1-py3-none-any.whl (36 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading PyYAML-6.0.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (746 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 746.5/746.5 kB 46.2 MB/s eta 0:00:00
+Downloading snowflake_connector_python-3.14.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 92.8 MB/s eta 0:00:00
+Downloading cryptography-45.0.5-cp37-abi3-manylinux_2_34_x86_64.whl (4.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 168.5 MB/s eta 0:00:00
+Downloading requests-2.32.4-py3-none-any.whl (64 kB)
+Downloading structlog-24.1.0-py3-none-any.whl (65 kB)
+Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+Downloading certifi-2025.7.14-py3-none-any.whl (162 kB)
+Downloading cffi-1.17.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (446 kB)
+Downloading charset_normalizer-3.4.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (147 kB)
+Downloading filelock-3.16.1-py3-none-any.whl (16 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (26 kB)
+Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Downloading PyJWT-2.9.0-py3-none-any.whl (22 kB)
+Downloading pyopenssl-25.1.0-py3-none-any.whl (56 kB)
+Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+Downloading urllib3-1.26.20-py2.py3-none-any.whl (144 kB)
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Downloading tomlkit-0.13.3-py3-none-any.whl (38 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: sortedcontainers, pytz, asn1crypto, urllib3, typing-extensions, tomlkit, structlog, pyyaml, pyjwt, pycparser, platformdirs, packaging, MarkupSafe, idna, filelock, charset-normalizer, certifi, requests, jinja2, cffi, cryptography, pyOpenSSL, snowflake-connector-python, schemachange
+Successfully installed MarkupSafe-2.1.5 asn1crypto-1.5.1 certifi-2025.7.14 cffi-1.17.1 charset-normalizer-3.4.2 cryptography-45.0.5 filelock-3.16.1 idna-3.10 jinja2-3.1.6 packaging-25.0 platformdirs-4.3.6 pyOpenSSL-25.1.0 pycparser-2.22 pyjwt-2.9.0 pytz-2025.2 pyyaml-6.0.2 requests-2.32.4 schemachange-4.0.1 snowflake-connector-python-3.14.0 sortedcontainers-2.4.0 structlog-24.1.0 tomlkit-0.13.3 typing-extensions-4.13.2 urllib3-1.26.20
+Step 2: Running schemachange
+2025-07-21T13:12:25.520240Z [info     ] schemachange version: 4.0.1   
+-a, --snowflake-account is deprecated. It will be ignored in future versions.
+[DEPRECATED - Set in connections.toml instead.] The name of the snowflake account (e.g. xy12345.east-us-2.azure, xy12345.east-us-2.azure.privatelink, org-accountname, org-accountname.privatelink)
+-u, --snowflake-user is deprecated. It will be ignored in future versions.
+[DEPRECATED - Set in connections.toml instead.] The name of the snowflake user
+-r, --snowflake-role is deprecated. It will be ignored in future versions.
+[DEPRECATED - Set in connections.toml instead.] The name of the default role to use
+-w, --snowflake-warehouse is deprecated. It will be ignored in future versions.
+[DEPRECATED - Set in connections.toml instead.] The name of the default warehouse to use. Can be overridden in the change scripts.
+-d, --snowflake-database is deprecated. It will be ignored in future versions.
+[DEPRECATED - Set in connections.toml instead.] The name of the default database to use. Can be overridden in the change scripts.
+usage: schemachange [-h] {deploy,render} ...
+schemachange: error: unrecognized arguments: --insecure-mode
+Error: Process completed with exit code 2.
